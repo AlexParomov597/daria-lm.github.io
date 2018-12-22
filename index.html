@@ -40,6 +40,8 @@
               <li><a href="" class="nav-item">Team</a></li>
               <li><a href="" class="btn-primary btn-free">Free Trail</a></li>
             </ul>
+            <!-- Кнопка для бургер-меню -->
+            <button class="btn-menu" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewbox = "0 0 512 512"><path d="M501.333 96H10.667C4.779 96 0 100.779 0 106.667s4.779 10.667 10.667 10.667h490.667c5.888 0 10.667-4.779 10.667-10.667S507.221 96 501.333 96zM501.333 245.333H10.667C4.779 245.333 0 250.112 0 256s4.779 10.667 10.667 10.667h490.667c5.888 0 10.667-4.779 10.667-10.667s-4.78-10.667-10.668-10.667zM501.333 394.667H10.667C4.779 394.667 0 399.445 0 405.333 0 411.221 4.779 416 10.667 416h490.667c5.888 0 10.667-4.779 10.667-10.667-.001-5.888-4.78-10.666-10.668-10.666z" fill="#006DF0"/></svg></button>
         </div>
         
         <div class="wrap">
@@ -57,10 +59,10 @@
     <!-- Второй блок со спонсорами (на синем фоне) -->
     <div class="page-company">
         <ul class="list-company">
-          <li class="list-company-item company-one"></li>
-          <li class="list-company-item company-two"></li>
-          <li class="list-company-item company-three"></li>
-          <li class="list-company-item company-four"></li>
+          <li class="list-company-item company-one"><span></span></li>
+          <li class="list-company-item company-two"><span></span></li>
+          <li class="list-company-item company-three"><span></span></li>
+          <li class="list-company-item company-four"><span></span></li>
         </ul>
     </div>
 
@@ -138,7 +140,7 @@
 
     <!-- Блок с картинкой-роботом -->
     <div class="page-subscribe">
-      <div class="wrap subscribe-title">
+      <div class="wrap subscribe-title box-subscribe">
         <div class="subscribe-title-child">
           <h2 class="title-h2"><span class="subscribe-span">Subscribe</span>Signap for a Trail</h2>
           <div class="subscribe-subtitle">
@@ -151,7 +153,7 @@
           </div>         
         </div>
 
-        <div class="robot-img"></div>
+        <img class="robot-img" src="img/robot/robot.png" alt="">
 
       </div>
     </div>
@@ -244,7 +246,7 @@
             <div class="settings-icon"></div>
             <h2 class="title-h2">Limpon Is Suitable For Anytype LandingPage</h2>
             <p class="page-analytics-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-            <button type="submit" class="btn-primary">get started now</button>
+            <div class="page-control-button"><button type="submit" class="btn-primary">get started now</button></div>
           </div>
       </div>
     </div>
@@ -258,10 +260,10 @@
               <div class="settings-icon"></div>
               <h2 class="title-h2">Easy To Etid & Very&nbsp;Easily Control</h2>
               <p class="page-control-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
-              <button type="submit" class="btn-primary">learn more</button>
+              <div class="page-control-button"><button type="submit" class="btn-primary">learn more</button></div>
           </div>
               
-          <img src="img/control/control-img.png" alt="Контроль">
+          <img class="page-control-img" src="img/control/control-img.png" alt="Контроль">
 
       </div> 
     </div>
@@ -472,11 +474,11 @@
         
         <div>
             <ul class="social">
-                <div class="social-item"><li><a href="" target="_blank"><img src="img/footer/icon-fb.png" alt=""></a></li></div> 
-                <div class="social-item"><li><a href="" target="_blank"><img src="img/footer/icon-tw.png" alt=""></a></li></div> 
-                <div class="social-item"><li><a href="" target="_blank"><img src="img/footer/icon-beh.png" alt=""></a></li></div> 
-                <div class="social-item"><li><a href="" target="_blank"><img src="img/footer/icon-pin.png" alt=""></a></li></div> 
-                <div class="social-item"><li><a href="" target="_blank"><img src="img/footer/icon-f.png" alt=""></a></li></div> 
+              <li class="social-item"><a href="" target="_blank"><img class="social-img" src="img/footer/icon-fb.png" alt=""></a></li>
+              <li class="social-item"><a href="" target="_blank"><img class="social-img"  src="img/footer/icon-tw.png" alt=""></a></li>
+              <li class="social-item"><a href="" target="_blank"><img class="social-img" src="img/footer/icon-beh.png" alt=""></a></li>
+              <li class="social-item"><a href="" target="_blank"><img class="social-img" src="img/footer/icon-pin.png" alt=""></a></li>
+              <li class="social-item"><a href="" target="_blank"><img class="social-img" src="img/footer/icon-f.png" alt=""></a></li>
               </ul>
         </div>
         
@@ -484,11 +486,31 @@
     </div>
     <!-- /.footer -->
 
+    <!-- МОДАЛЬНОЕ ОКНО ПРИ СКРЫТИИ ПУНКТОВ МЕНЮ НАВИГАЦИИ -->
+    <div class="overlay">
+      <div class="modal">
+
+        <button class="btn-close" type="button"><span>&times;</span></button>
+
+        <ul class="nav-modal">
+          <li><a href="" class="nav-item">Home</a></li>
+          <li><a href="" class="nav-item">Features</a></li>
+          <li><a href="" class="nav-item">Video</a></li>
+          <li><a href="" class="nav-item">Screens</a></li>
+          <li><a href="" class="nav-item">Pricing</a></li>
+          <li><a href="" class="nav-item">Team</a></li>
+          <li><a href="" class="btn-primary btn-free">Free Trail</a></li>
+        </ul>
+
+      </div>
+    </div>
+
 
     <!-- Подключение jQuery -->
       <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
       <!-- Скрипт для плавного появления кнопок соцсетей -->
       <script>
+        // Обработка события при нажатии на кнопку "+" в блоке "our team"
         $(document).ready(function(){
           $(".btn-ricardo").click(function(){
             $(".btn-ricardo").hide(); // чтобы кнопка + пряталась и на ее место вставали соцсети (у них отступы обнулены все)
@@ -503,6 +525,16 @@
           $(".btn-thomas").click(function(){
             $(".btn-thomas").hide();
             $(".social-thomas").fadeIn();
+          });
+
+          // Обработка модального окна с кнопками навигации (появление и закрытие)
+          $(".btn-menu").click(function() {
+            $('.overlay').show();
+            $(".modal").show();
+          });
+          $(".btn-close").click(function() {
+            $('.overlay').hide();
+            $(".modal").hide();
           });
         });
         </script>
